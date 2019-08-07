@@ -16,9 +16,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'mopub-ios-sdk', '5.7.0'
-  s.dependency 'MoPub-Applovin-Adapters', '6.7.1.0'
   s.dependency 'MoPub-AdMob-Adapters', '7.46.0.0'
-  s.dependency 'MoPub-FacebookAudienceNetwork-Adapters', '5.4.0.0'
   
   s.static_framework = true
   

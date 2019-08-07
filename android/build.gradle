@@ -46,16 +46,8 @@ dependencies {
         transitive = true
     }
 
-// AppLovin
-    implementation 'com.applovin:applovin-sdk:9.7.2'
-    implementation 'com.mopub.mediation:applovin:9.7.2.0'
-
 // Google (AdMob)
     implementation 'com.google.android.gms:play-services-ads:17.2.1'
     implementation 'com.mopub.mediation:admob:17.2.1.0'
-
-// Facebook Audience Network
-    implementation 'com.facebook.android:audience-network-sdk:5.4.0'
-    implementation 'com.mopub.mediation:facebookaudiencenetwork:5.4.0.0'
 
 }

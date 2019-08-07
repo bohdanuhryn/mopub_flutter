@@ -20,10 +20,6 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
 
-        <meta-data
-            android:name="applovin.sdk.key"
-            android:value="HTIqKGx7_mCdJyGyiZTzSNyuKeeIIk2Mdo-vT-VJe5V2nWHXv4OKoUua_s9VxnED00C0GaSz8G0FNSmkrEB8-T" />
-
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

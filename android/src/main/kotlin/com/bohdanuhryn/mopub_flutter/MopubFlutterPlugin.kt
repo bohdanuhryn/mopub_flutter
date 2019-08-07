@@ -24,6 +24,7 @@ class MopubFlutterPlugin(private val context: Context): MethodCallHandler {
       registrar
               .platformViewRegistry()
               .registerViewFactory("mopub_flutter/banner", MopubBannerFactory(registrar.messenger()))
+
     }
 
   }

@@ -54,7 +54,5 @@
 	<false/>
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
-	<key>AppLovinSdkKey</key>
-	<string>HTIqKGx7_mCdJyGyiZTzSNyuKeeIIk2Mdo-vT-VJe5V2nWHXv4OKoUua_s9VxnED00C0GaSz8G0FNSmkrEB8-T</string>
 </dict>
 </plist>
