@@ -41,13 +41,12 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
     implementation('com.mopub:mopub-sdk-banner:5.5.0@aar') {
         transitive = true
     }
-
-// Google (AdMob)
+    // Google (AdMob)
     implementation 'com.google.android.gms:play-services-ads:17.2.1'
     implementation 'com.mopub.mediation:admob:17.2.1.0'
 
+    implementation files('libs/amazon-ads-5.9.0.jar')
 }

@@ -2,9 +2,11 @@ package com.bohdanuhryn.mopub_flutter
 
 import android.content.Context
 import android.util.Log
+import com.mopub.common.MediationSettings
 import com.mopub.common.MoPub
 import com.mopub.common.SdkConfiguration
 import com.mopub.common.logging.MoPubLog
+import com.mopub.mobileads.MoPubView
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
@@ -23,7 +25,10 @@ class MopubFlutterPlugin(private val context: Context): MethodCallHandler {
       defaultChannel.setMethodCallHandler(MopubFlutterPlugin(registrar.context()))
       registrar
               .platformViewRegistry()
-              .registerViewFactory("mopub_flutter/banner", MopubBannerFactory(registrar.messenger()))
+              .registerViewFactory("mopub_flutter/banner", MopubBannerFactory(
+                      registrar.messenger(),
+                      registrar.activity()
+              ))
 
     }
 
@@ -43,6 +48,7 @@ class MopubFlutterPlugin(private val context: Context): MethodCallHandler {
     } else {
       builder.withLogLevel(MoPubLog.LogLevel.INFO)
     }
+    builder.withAdditionalNetwork("com.mopub.mobileads.AmazonAdapterConfiguration")
     val config = builder.build()
     MoPub.initializeSdk(context, config) {
       Log.d(TAG, "MoPub sdk initialized")

@@ -1,5 +1,6 @@
 package com.bohdanuhryn.mopub_flutter
 
+import android.app.Activity
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ import com.mopub.mobileads.MoPubErrorCode
 
 class MopubBanner(
         context: Context,
+        activity: Activity,
         messenger: BinaryMessenger,
         id: Int,
         args: HashMap<*, *>?
@@ -25,17 +27,28 @@ class MopubBanner(
 
     init {
         channel.setMethodCallHandler(this)
-        adView.adUnitId = args?.get("adUnitId") as String?
-        adView.layoutParams = layoutParams(context, args ?: HashMap<Any, Any>())
+        val size: Map<*, *> = args?.get("adSize") as Map<*, *>
+        adView.adUnitId = (args["adUnitId"] as String?) ?: ""
+        adView.localExtras = getLocalExtras(activity, size)
+        adView.layoutParams = getLayoutParams(context, size)
         adView.bannerAdListener = bannerAdListener()
         adView.loadAd()
     }
 
-    private fun layoutParams(context: Context, args: HashMap<*, *>): ViewGroup.LayoutParams {
-        val sizeMap = args["adSize"] as Map<*, *>
+    private fun getLocalExtras(activity: Activity, size: Map<*, *>): Map<String, Any> {
+        val width = (size["width"] ?: 0) as Int
+        val height = (size["height"] ?: 0) as Int
+        return mapOf(
+                "activity" to activity,
+                "adWidth" to width,
+                "adHeight" to height
+        )
+    }
+
+    private fun getLayoutParams(context: Context, size: Map<*, *>): ViewGroup.LayoutParams {
         val displayMetrics = context.resources.displayMetrics
-        val width = (sizeMap["width"] ?: 0) as Int
-        val height = (sizeMap["height"] ?: 0) as Int
+        val width = (size["width"] ?: 0) as Int
+        val height = (size["height"] ?: 0) as Int
         val widthPx = applyDimension(COMPLEX_UNIT_DIP, width.toFloat(), displayMetrics)
         val heightPx = applyDimension(COMPLEX_UNIT_DIP, height.toFloat(), displayMetrics)
         return ViewGroup.LayoutParams(widthPx.toInt(), heightPx.toInt())

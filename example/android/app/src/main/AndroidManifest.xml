@@ -20,6 +20,10 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
 
+        <meta-data
+            android:name="amazon_ads_app_id"
+            android:value="0f14c5c0eea448f9aa285573fec31c77"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
