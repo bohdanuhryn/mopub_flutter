@@ -11,6 +11,17 @@
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		47301A7F22FDE30C00505460 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A7E22FDE30C00505460 /* AdSupport.framework */; };
+		47301A8122FDE31800505460 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8022FDE31800505460 /* CoreLocation.framework */; };
+		47301A8322FDE32300505460 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8222FDE32300505460 /* SystemConfiguration.framework */; };
+		47301A8522FDE32C00505460 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8422FDE32C00505460 /* CoreTelephony.framework */; };
+		47301A8722FDE33500505460 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8622FDE33500505460 /* MediaPlayer.framework */; };
+		47301A8922FDE33F00505460 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8822FDE33F00505460 /* EventKit.framework */; };
+		47301A8B22FDE34600505460 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8A22FDE34600505460 /* EventKitUI.framework */; };
+		47301A8D22FDE34E00505460 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8C22FDE34E00505460 /* StoreKit.framework */; };
+		47301A8F22FDE35800505460 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A8E22FDE35800505460 /* QuartzCore.framework */; };
+		47301A9122FDE36100505460 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A9022FDE36100505460 /* JavaScriptCore.framework */; };
+		47301A9322FDE36A00505460 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47301A9222FDE36A00505460 /* SafariServices.framework */; };
 		5065B2B5B014CBB73F7E909C /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F361CAC25C0A29E0112AA8F8 /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
@@ -41,6 +52,18 @@
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+		47301A7E22FDE30C00505460 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		47301A8022FDE31800505460 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		47301A8222FDE32300505460 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		47301A8422FDE32C00505460 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		47301A8622FDE33500505460 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		47301A8822FDE33F00505460 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		47301A8A22FDE34600505460 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		47301A8C22FDE34E00505460 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		47301A8E22FDE35800505460 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		47301A9022FDE36100505460 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		47301A9222FDE36A00505460 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		47301A9422FDE57700505460 /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AmazonAd.framework; path = "Pods/AmazonAd/AmazonMobileAds-ios-2.2.15.1-SDK/AmazonAd.framework"; sourceTree = "<group>"; };
 		56406F74801D6277C9C68966 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB7D42C754BDEB6A5E9DFB3 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -63,6 +86,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47301A9322FDE36A00505460 /* SafariServices.framework in Frameworks */,
+				47301A9122FDE36100505460 /* JavaScriptCore.framework in Frameworks */,
+				47301A8F22FDE35800505460 /* QuartzCore.framework in Frameworks */,
+				47301A8D22FDE34E00505460 /* StoreKit.framework in Frameworks */,
+				47301A8B22FDE34600505460 /* EventKitUI.framework in Frameworks */,
+				47301A8922FDE33F00505460 /* EventKit.framework in Frameworks */,
+				47301A8722FDE33500505460 /* MediaPlayer.framework in Frameworks */,
+				47301A8522FDE32C00505460 /* CoreTelephony.framework in Frameworks */,
+				47301A8322FDE32300505460 /* SystemConfiguration.framework in Frameworks */,
+				47301A8122FDE31800505460 /* CoreLocation.framework in Frameworks */,
+				47301A7F22FDE30C00505460 /* AdSupport.framework in Frameworks */,
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
 				5065B2B5B014CBB73F7E909C /* Pods_Runner.framework in Frameworks */,
@@ -75,6 +109,18 @@
 		12B83C47C4095A11859C6A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47301A9422FDE57700505460 /* AmazonAd.framework */,
+				47301A9222FDE36A00505460 /* SafariServices.framework */,
+				47301A9022FDE36100505460 /* JavaScriptCore.framework */,
+				47301A8E22FDE35800505460 /* QuartzCore.framework */,
+				47301A8C22FDE34E00505460 /* StoreKit.framework */,
+				47301A8A22FDE34600505460 /* EventKitUI.framework */,
+				47301A8822FDE33F00505460 /* EventKit.framework */,
+				47301A8622FDE33500505460 /* MediaPlayer.framework */,
+				47301A8422FDE32C00505460 /* CoreTelephony.framework */,
+				47301A8222FDE32300505460 /* SystemConfiguration.framework */,
+				47301A8022FDE31800505460 /* CoreLocation.framework */,
+				47301A7E22FDE30C00505460 /* AdSupport.framework */,
 				F361CAC25C0A29E0112AA8F8 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -375,14 +421,17 @@
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8DH62KGGN6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Pods/AmazonAd/AmazonMobileAds-ios-2.2.15.1-SDK",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,15 +560,18 @@
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8DH62KGGN6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Pods/AmazonAd/AmazonMobileAds-ios-2.2.15.1-SDK",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -543,15 +595,18 @@
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8DH62KGGN6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Pods/AmazonAd/AmazonMobileAds-ios-2.2.15.1-SDK",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

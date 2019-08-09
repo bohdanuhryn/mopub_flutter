@@ -1,32 +1,29 @@
 PODS:
-  - AppLovinSDK (6.7.1)
-  - FBAudienceNetwork (5.4.0):
-    - FBSDKCoreKit/Basics
-  - FBSDKCoreKit/Basics (5.2.1)
+  - AmazonAd (2.2.15.1)
   - Flutter (1.0.0)
   - Google-Mobile-Ads-SDK (7.46.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.0.3):
+  - GoogleAppMeasurement (6.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 0.3)
-  - GoogleUtilities/AppDelegateSwizzler (6.2.3):
+  - GoogleUtilities/AppDelegateSwizzler (6.2.4):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.2.3)
-  - GoogleUtilities/Logger (6.2.3):
+  - GoogleUtilities/Environment (6.2.4)
+  - GoogleUtilities/Logger (6.2.4):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.2.3):
+  - GoogleUtilities/MethodSwizzler (6.2.4):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.2.3):
+  - GoogleUtilities/Network (6.2.4):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.2.3)"
-  - GoogleUtilities/Reachability (6.2.3):
+  - "GoogleUtilities/NSData+zlib (6.2.4)"
+  - GoogleUtilities/Reachability (6.2.4):
     - GoogleUtilities/Logger
   - MoPub-AdMob-Adapters (7.46.0.0):
     - MoPub-AdMob-Adapters/MoPub (= 7.46.0.0)
@@ -35,22 +32,6 @@ PODS:
     - mopub-ios-sdk/Core (~> 5.5)
   - MoPub-AdMob-Adapters/Network (7.46.0.0):
     - Google-Mobile-Ads-SDK (= 7.46.0)
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-Applovin-Adapters (6.7.1.0):
-    - MoPub-Applovin-Adapters/MoPub (= 6.7.1.0)
-    - MoPub-Applovin-Adapters/Network (= 6.7.1.0)
-  - MoPub-Applovin-Adapters/MoPub (6.7.1.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-Applovin-Adapters/Network (6.7.1.0):
-    - AppLovinSDK (= 6.7.1)
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-FacebookAudienceNetwork-Adapters (5.4.0.0):
-    - MoPub-FacebookAudienceNetwork-Adapters/MoPub (= 5.4.0.0)
-    - MoPub-FacebookAudienceNetwork-Adapters/Network (= 5.4.0.0)
-  - MoPub-FacebookAudienceNetwork-Adapters/MoPub (5.4.0.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-FacebookAudienceNetwork-Adapters/Network (5.4.0.0):
-    - FBAudienceNetwork (= 5.4.0)
     - mopub-ios-sdk/Core (~> 5.5)
   - mopub-ios-sdk (5.7.0):
     - mopub-ios-sdk/MoPubSDK (= 5.7.0)
@@ -63,85 +44,16 @@ PODS:
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
-  - MoPub-UnityAds-Adapters (3.1.0.0):
-    - MoPub-UnityAds-Adapters/MoPub (= 3.1.0.0)
-    - MoPub-UnityAds-Adapters/Network (= 3.1.0.0)
-  - MoPub-UnityAds-Adapters/MoPub (3.1.0.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-UnityAds-Adapters/Network (3.1.0.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-    - UnityAds (= 3.1.0)
-  - MoPub-Verizon-Adapters (1.1.2.0):
-    - MoPub-Verizon-Adapters/MoPub (= 1.1.2.0)
-    - MoPub-Verizon-Adapters/Network (= 1.1.2.0)
-  - MoPub-Verizon-Adapters/MoPub (1.1.2.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-Verizon-Adapters/Network (1.1.2.0):
-    - mopub-ios-sdk/Core (~> 5.5)
-    - Verizon-Ads-StandardEdition (= 1.1.2)
-  - MoPub-Vungle-Adapters (6.3.2.6):
-    - MoPub-Vungle-Adapters/MoPub (= 6.3.2.6)
-    - MoPub-Vungle-Adapters/Network (= 6.3.2.6)
-  - MoPub-Vungle-Adapters/MoPub (6.3.2.6):
-    - mopub-ios-sdk/Core (~> 5.5)
-  - MoPub-Vungle-Adapters/Network (6.3.2.6):
-    - mopub-ios-sdk/Core (~> 5.5)
-    - VungleSDK-iOS (= 6.3.2)
   - mopub_flutter (0.0.1):
+    - AmazonAd (~> 2.2)
     - Flutter
     - MoPub-AdMob-Adapters (= 7.46.0.0)
-    - MoPub-Applovin-Adapters (= 6.7.1.0)
-    - MoPub-FacebookAudienceNetwork-Adapters (= 5.4.0.0)
     - mopub-ios-sdk (= 5.7.0)
-    - MoPub-UnityAds-Adapters (= 3.1.0.0)
-    - MoPub-Verizon-Adapters (= 1.1.2.0)
-    - MoPub-Vungle-Adapters (= 6.3.2.6)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - UnityAds (3.1.0)
-  - Verizon-Ads-Core (1.1.2)
-  - Verizon-Ads-InlinePlacement (1.1.0)
-  - Verizon-Ads-InlineWebAdapter (1.1.0)
-  - Verizon-Ads-InterstitialPlacement (1.1.1)
-  - Verizon-Ads-InterstitialVASTAdapter (1.1.0)
-  - Verizon-Ads-InterstitialWebAdapter (1.1.0)
-  - Verizon-Ads-NativePlacement (1.1.0)
-  - Verizon-Ads-NativeVerizonNativeAdapter (1.1.2)
-  - Verizon-Ads-OMSDK (1.1.0)
-  - Verizon-Ads-StandardEdition (1.1.2):
-    - Verizon-Ads-Core (= 1.1.2)
-    - Verizon-Ads-InlinePlacement (= 1.1.0)
-    - Verizon-Ads-InlineWebAdapter (= 1.1.0)
-    - Verizon-Ads-InterstitialPlacement (= 1.1.1)
-    - Verizon-Ads-InterstitialVASTAdapter (= 1.1.0)
-    - Verizon-Ads-InterstitialWebAdapter (= 1.1.0)
-    - Verizon-Ads-NativePlacement (= 1.1.0)
-    - Verizon-Ads-NativeVerizonNativeAdapter (= 1.1.2)
-    - Verizon-Ads-OMSDK (= 1.1.0)
-    - Verizon-Ads-Support (= 1.1.1)
-    - Verizon-Ads-URIExperience (= 1.1.1)
-    - Verizon-Ads-VASTController (= 1.1.0)
-    - Verizon-Ads-VerizonNativeController (= 1.1.1)
-    - Verizon-Ads-VerizonSSPConfigProvider (= 1.1.0)
-    - Verizon-Ads-VerizonSSPReporter (= 1.1.0)
-    - Verizon-Ads-VerizonSSPWaterfallProvider (= 1.1.0)
-    - Verizon-Ads-VideoPlayer (= 1.1.0)
-    - Verizon-Ads-WebController (= 1.1.1)
-    - Verizon-Ads-WebView (= 1.1.1)
-  - Verizon-Ads-Support (1.1.1)
-  - Verizon-Ads-URIExperience (1.1.1)
-  - Verizon-Ads-VASTController (1.1.0)
-  - Verizon-Ads-VerizonNativeController (1.1.1)
-  - Verizon-Ads-VerizonSSPConfigProvider (1.1.0)
-  - Verizon-Ads-VerizonSSPReporter (1.1.0)
-  - Verizon-Ads-VerizonSSPWaterfallProvider (1.1.0)
-  - Verizon-Ads-VideoPlayer (1.1.0)
-  - Verizon-Ads-WebController (1.1.1)
-  - Verizon-Ads-WebView (1.1.1)
-  - VungleSDK-iOS (6.3.2)
 
 DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
@@ -149,42 +61,13 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AppLovinSDK
-    - FBAudienceNetwork
-    - FBSDKCoreKit
+    - AmazonAd
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - MoPub-AdMob-Adapters
-    - MoPub-Applovin-Adapters
-    - MoPub-FacebookAudienceNetwork-Adapters
     - mopub-ios-sdk
-    - MoPub-UnityAds-Adapters
-    - MoPub-Verizon-Adapters
-    - MoPub-Vungle-Adapters
     - nanopb
-    - UnityAds
-    - Verizon-Ads-Core
-    - Verizon-Ads-InlinePlacement
-    - Verizon-Ads-InlineWebAdapter
-    - Verizon-Ads-InterstitialPlacement
-    - Verizon-Ads-InterstitialVASTAdapter
-    - Verizon-Ads-InterstitialWebAdapter
-    - Verizon-Ads-NativePlacement
-    - Verizon-Ads-NativeVerizonNativeAdapter
-    - Verizon-Ads-OMSDK
-    - Verizon-Ads-StandardEdition
-    - Verizon-Ads-Support
-    - Verizon-Ads-URIExperience
-    - Verizon-Ads-VASTController
-    - Verizon-Ads-VerizonNativeController
-    - Verizon-Ads-VerizonSSPConfigProvider
-    - Verizon-Ads-VerizonSSPReporter
-    - Verizon-Ads-VerizonSSPWaterfallProvider
-    - Verizon-Ads-VideoPlayer
-    - Verizon-Ads-WebController
-    - Verizon-Ads-WebView
-    - VungleSDK-iOS
 
 EXTERNAL SOURCES:
   Flutter:
@@ -193,44 +76,15 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/mopub_flutter/ios"
 
 SPEC CHECKSUMS:
-  AppLovinSDK: a1f7363cfd3875ee9b968c975b6f4b80adebce4d
-  FBAudienceNetwork: c1514860ed6d9ba9f97350f3fbb3ac49556f5e43
-  FBSDKCoreKit: e1ab8d86f5eea2d7aa6ab12acca3e1d2dcb11983
+  AmazonAd: 9b7226322bc124343d279a98c28cdae26c48a0e7
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   Google-Mobile-Ads-SDK: 4bff3a7d621555f2317813e495fecce745681f7e
-  GoogleAppMeasurement: 1e45fa601e6280c180880d57010390f6679cd971
-  GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
+  GoogleAppMeasurement: 47285fa897e5a125df56b9ef8750a1d81e4598a8
+  GoogleUtilities: 64b5e3982b1b01bda26712affd5c523ef32563cf
   MoPub-AdMob-Adapters: 04c8fdf9edfe9ecc9994f4b25e69695053bf013e
-  MoPub-Applovin-Adapters: 11bd049ee426ba79e7f993ba8122229c4b2ad455
-  MoPub-FacebookAudienceNetwork-Adapters: 5b8c471c4722dd4df824c760cc84910e43442921
   mopub-ios-sdk: e5074eb28a332957df8ebc1b26d42c691a5d7ed2
-  MoPub-UnityAds-Adapters: 7a3e46380d013bc2fc603a2ad844ef09e68b9b9f
-  MoPub-Verizon-Adapters: e2b9fdddb1abf6a99e2d335f109987b5ce0986e9
-  MoPub-Vungle-Adapters: 5e8b836691b85de3c30238b7dbc5ce29986396ca
-  mopub_flutter: 677fd0384ee4074faf6cd925c545ee8ff6c55a99
+  mopub_flutter: f38a4f84583a1d46fa816a103a6aca42cb11608b
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  UnityAds: 7fb217f6a354abe1f08a6bfc90bd2391fff72e6b
-  Verizon-Ads-Core: 6ed29b54a53b78345f995b9092e0097c25e64252
-  Verizon-Ads-InlinePlacement: d7e55b6951261d979341b29307b06daf76a8ddfb
-  Verizon-Ads-InlineWebAdapter: cc99a95cefb107a6a868006a649cb371f155a507
-  Verizon-Ads-InterstitialPlacement: 400e4fc9b4329d11c36c7b3145e61bb6e7f5a87f
-  Verizon-Ads-InterstitialVASTAdapter: 6d32ca31ffa0e2bc7a16362fbe5c88e4926f14a3
-  Verizon-Ads-InterstitialWebAdapter: 647fbed1a6ef363cf0751a8841651b784ee0d233
-  Verizon-Ads-NativePlacement: 841355ce13f06fc3cce9be5a93f685a0ae958875
-  Verizon-Ads-NativeVerizonNativeAdapter: 19d71ed3eeb324184e59b5ca379e0c956304f1e0
-  Verizon-Ads-OMSDK: 2dbd10961971ecf9238d81ecf43eaa13a0520edd
-  Verizon-Ads-StandardEdition: 659fae75eb410b8f87b0b65f39c2ab4116c4f1e9
-  Verizon-Ads-Support: bd0fae866d84b4664eb37abf3cd708fcc852d8f9
-  Verizon-Ads-URIExperience: b9bdf94f13e835478c9dc83c0ccd3cd4641ee18f
-  Verizon-Ads-VASTController: 7fb8d3a7ff3bcd84584de25e6f36d1ef40bcbe8c
-  Verizon-Ads-VerizonNativeController: 67174e74f9c697ca6e437eba29a3a2877ff9807f
-  Verizon-Ads-VerizonSSPConfigProvider: 68faffd9f5fdd78150b267eb628809ac1d69391b
-  Verizon-Ads-VerizonSSPReporter: 9ea3602dcbe3d14055320e8e7da519cfc9a041c3
-  Verizon-Ads-VerizonSSPWaterfallProvider: b2689c241779d79c17fa8a9aaf63715e0231a6d7
-  Verizon-Ads-VideoPlayer: f805012a93d4c5e4b071cda78f97f501b3f69cad
-  Verizon-Ads-WebController: 2bb746b6e2ea12e690c852f60f53e98eb1d9fa32
-  Verizon-Ads-WebView: 5dd03dd9549174eb9223be8850a5fc4850358dfe
-  VungleSDK-iOS: 69a7f407b60281d2954ffc5eeeac349fbfed51d6
 
 PODFILE CHECKSUM: 2c26e2bafa90f053205a9e99ab1fdce88251e293
 

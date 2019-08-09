@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'Flutter'
   s.dependency 'mopub-ios-sdk', '5.7.0'
   s.dependency 'MoPub-AdMob-Adapters', '7.46.0.0'
+  s.dependency 'AmazonAd', '~> 2.2'
   
   s.static_framework = true
   

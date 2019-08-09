@@ -8,8 +8,14 @@ public class SwiftMopubFlutterPlugin: NSObject, FlutterPlugin {
         let instance = SwiftMopubFlutterPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
         
+        let viewController: UIViewController =
+            (UIApplication.shared.delegate?.window??.rootViewController)!;
+        
         registrar.register(
-            MopubBannerFactory(messeneger: registrar.messenger()),
+            MopubBannerFactory(
+                messeneger: registrar.messenger(),
+                viewController: viewController
+            ),
             withId: "mopub_flutter/banner"
         )
     }
