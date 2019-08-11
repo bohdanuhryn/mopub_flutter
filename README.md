@@ -21,6 +21,10 @@ implementation 'com.mopub.mediation:applovin:x.x.x.x'
     android:name="com.google.android.gms.ads.APPLICATION_ID"
     android:value="ca-app-pub-3940256099942544~3347511713"/>
 
+<meta-data
+    android:name="amazon_ads_app_id"
+    android:value="**********"/>
+
 //Optionally
 <meta-data
     android:name="applovin.sdk.key"
@@ -52,6 +56,8 @@ implementation 'com.mopub.mediation:applovin:x.x.x.x'
 ~~~~
 <key>GADApplicationIdentifier</key>
 <string>ca-app-pub-3940256099942544~1458002511</string>
+<key>com.mopub_flutter.amazon_app_key</key>
+<string>**********</string>
 <key>io.flutter.embedded_views_preview</key>
 <true/>
 
