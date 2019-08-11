@@ -1,7 +1,7 @@
 import Foundation
 import MoPub
 
-@objc class MopubBanner : NSObject, FlutterPlatformView {
+@objc class MopubBanner : NSObject, FlutterPlatformView, MPAdViewDelegate {
     
     private let viewController: UIViewController
     private let channel: FlutterMethodChannel
@@ -37,6 +37,7 @@ import MoPub
             let width = adSize["width"] as? Int ?? 0
             let height = adSize["height"] as? Int ?? 0
             adView = MPAdView(adUnitId: adUnitId, size: CGSize(width: width, height: height))
+            adView?.delegate = self
             adView!.frame = self.frame.width == 0 ? CGRect(x: 0, y: 0, width: 1, height: 1) : self.frame;
             channel.setMethodCallHandler { [weak self] (flutterMethodCall: FlutterMethodCall, flutterResult: FlutterResult) in
                 switch flutterMethodCall.method {
@@ -56,6 +57,10 @@ import MoPub
         }
         
         return adView
+    }
+    
+    func viewControllerForPresentingModalView() -> UIViewController! {
+        return viewController
     }
     
 }
