@@ -48,7 +48,6 @@ class MopubFlutterPlugin(private val context: Context): MethodCallHandler {
     } else {
       builder.withLogLevel(MoPubLog.LogLevel.INFO)
     }
-    builder.withAdditionalNetwork("com.mopub.mobileads.AmazonAdapterConfiguration")
     val config = builder.build()
     MoPub.initializeSdk(context, config) {
       Log.d(TAG, "MoPub sdk initialized")
