@@ -54,5 +54,7 @@
 	<false/>
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
+    <key>com.mopub_flutter.amazon_app_key</key>
+    <string>3aaae7b1df954e5389f9830247a44e6a</string>
 </dict>
 </plist>
