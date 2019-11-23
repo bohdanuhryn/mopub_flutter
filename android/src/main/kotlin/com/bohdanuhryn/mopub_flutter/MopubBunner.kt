@@ -14,7 +14,6 @@ import android.util.TypedValue.applyDimension
 import com.mopub.mobileads.MoPubErrorCode
 
 class MopubBanner(
-        context: Context,
         activity: Activity,
         messenger: BinaryMessenger,
         id: Int,
@@ -23,14 +22,14 @@ class MopubBanner(
 
     private val channel: MethodChannel = MethodChannel(messenger, "mopub_flutter/banner_$id")
 
-    private val adView: MoPubView = MoPubView(context)
+    private val adView: MoPubView = MoPubView(activity)
 
     init {
         channel.setMethodCallHandler(this)
         val size: Map<*, *> = args?.get("adSize") as Map<*, *>
         adView.adUnitId = (args["adUnitId"] as String?) ?: ""
         adView.localExtras = getLocalExtras(activity, size)
-        adView.layoutParams = getLayoutParams(context, size)
+        adView.layoutParams = getLayoutParams(activity, size)
         adView.bannerAdListener = bannerAdListener()
         adView.loadAd()
     }

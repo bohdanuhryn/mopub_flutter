@@ -6,6 +6,7 @@ import 'package:mopub_flutter/mopub_flutter.dart';
 import 'package:mopub_flutter_example/mopub_consts.dart';
 
 void main() {
+    WidgetsFlutterBinding.ensureInitialized();
     Mopub.initialize(Platform.isIOS ? MopubConsts.bannerIdIOS : MopubConsts.bannerIdAndroid);
     runApp(MopubApp());
 }

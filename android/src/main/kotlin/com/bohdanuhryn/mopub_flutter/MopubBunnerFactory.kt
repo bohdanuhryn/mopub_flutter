@@ -13,7 +13,7 @@ class MopubBannerFactory(
 ) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
     override fun create(context: Context, viewId: Int, args: Any?): PlatformView {
-        return MopubBanner(context, activity, messenger, viewId, args as HashMap<*, *>?)
+        return MopubBanner(activity, messenger, viewId, args as HashMap<*, *>?)
     }
 
 }
