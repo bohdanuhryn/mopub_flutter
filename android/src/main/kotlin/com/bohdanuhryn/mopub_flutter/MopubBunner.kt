@@ -2,16 +2,16 @@ package com.bohdanuhryn.mopub_flutter
 
 import android.app.Activity
 import android.content.Context
+import android.util.TypedValue.COMPLEX_UNIT_DIP
+import android.util.TypedValue.applyDimension
 import android.view.View
 import android.view.ViewGroup
+import com.mopub.mobileads.MoPubErrorCode
 import com.mopub.mobileads.MoPubView
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.platform.PlatformView
-import android.util.TypedValue.COMPLEX_UNIT_DIP
-import android.util.TypedValue.applyDimension
-import com.mopub.mobileads.MoPubErrorCode
 
 class MopubBanner(
         activity: Activity,
