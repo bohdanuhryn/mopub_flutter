@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'mopub-ios-sdk/Core', '5.12.1'
-#  s.dependency 'MoPub-AdMob-Adapters', '7.59.0.0'
+  s.dependency 'mopub-ios-sdk', '5.13.0'
+  s.dependency 'MoPub-AdMob-Adapters', '7.60.0.0'
   s.dependency 'AmazonAd', '~> 3.0.0'
   
   s.static_framework = true
   
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   
 end

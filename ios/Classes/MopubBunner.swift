@@ -36,7 +36,7 @@ import MoPub
             let adSize = self.args["adSize"] as? Dictionary<String, Any> ?? [String:Any]()
             let width = adSize["width"] as? Int ?? 0
             let height = adSize["height"] as? Int ?? 0
-            adView = MPAdView(adUnitId: adUnitId, size: CGSize(width: width, height: height))
+            adView = MPAdView(adUnitId: adUnitId)
             adView?.delegate = self
             adView!.frame = self.frame.width == 0 ? CGRect(x: 0, y: 0, width: 1, height: 1) : self.frame;
             channel.setMethodCallHandler { [weak self] (flutterMethodCall: FlutterMethodCall, flutterResult: FlutterResult) in

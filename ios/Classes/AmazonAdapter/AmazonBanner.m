@@ -63,7 +63,7 @@
 }
 
 - (void)adViewDidLoad:(AmazonAdView *)view {
-    [self.delegate bannerCustomEvent:self didLoadAd:self.amazonAdView];
+    [self.delegate inlineAdAdapter:self didLoadAdWithAdView:self.amazonAdView];
     NSLog(@"Amazon ad loaded!!!!!!");
 }
 
@@ -71,7 +71,7 @@
     NSMutableDictionary* userInfo = [NSMutableDictionary dictionary];
     [userInfo setValue:[error errorDescription] forKey:NSLocalizedDescriptionKey];
     NSError *err = [NSError errorWithDomain:@"AmazonAd" code:[error errorCode] userInfo:userInfo];
-    [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:err];
+    [self.delegate inlineAdAdapter:self didFailToLoadAdWithError:err];
     NSLog(@"Ad Failed to load. Error code %d: %@", error.errorCode, error.errorDescription);
 }
         

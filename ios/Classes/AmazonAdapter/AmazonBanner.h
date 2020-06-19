@@ -1,5 +1,5 @@
-#import <MoPub/MPBannerCustomEvent.h>
+#import <MoPub/MPInlineAdAdapter.h>
 
-@interface AmazonBanner : MPBannerCustomEvent
+@interface AmazonBanner : MPInlineAdAdapter
 
 @end
