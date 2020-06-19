@@ -1,41 +1,6 @@
 PODS:
   - AmazonAd (3.0.0)
   - Flutter (1.0.0)
-  - Google-Mobile-Ads-SDK (7.60.0):
-    - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.6.1):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 1.30905.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.6.0):
-    - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (6.6.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.6.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.6.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.6.0)"
-  - GoogleUtilities/Reachability (6.6.0):
-    - GoogleUtilities/Logger
-  - MoPub-AdMob-Adapters (7.60.0.0):
-    - MoPub-AdMob-Adapters/MoPub (= 7.60.0.0)
-    - MoPub-AdMob-Adapters/Network (= 7.60.0.0)
-  - MoPub-AdMob-Adapters/MoPub (7.60.0.0):
-    - mopub-ios-sdk/Core (~> 5.13)
-    - mopub-ios-sdk/NativeAds (~> 5.13)
-  - MoPub-AdMob-Adapters/Network (7.60.0.0):
-    - Google-Mobile-Ads-SDK (= 7.60.0)
-    - mopub-ios-sdk/Core (~> 5.13)
-    - mopub-ios-sdk/NativeAds (~> 5.13)
   - mopub-ios-sdk (5.13.0):
     - mopub-ios-sdk/MoPubSDK (= 5.13.0)
   - mopub-ios-sdk/Core (5.13.0)
@@ -47,14 +12,7 @@ PODS:
   - mopub_flutter (0.0.1):
     - AmazonAd (~> 3.0.0)
     - Flutter
-    - MoPub-AdMob-Adapters (= 7.60.0.0)
     - mopub-ios-sdk (= 5.13.0)
-  - nanopb (1.30905.0):
-    - nanopb/decode (= 1.30905.0)
-    - nanopb/encode (= 1.30905.0)
-  - nanopb/decode (1.30905.0)
-  - nanopb/encode (1.30905.0)
-  - PromisesObjC (1.2.9)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -63,13 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AmazonAd
-    - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
-    - GoogleUtilities
-    - MoPub-AdMob-Adapters
     - mopub-ios-sdk
-    - nanopb
-    - PromisesObjC
 
 EXTERNAL SOURCES:
   Flutter:
@@ -80,14 +32,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  Google-Mobile-Ads-SDK: d70efb31e7ea19fe99d466dc5d4788966b6914f8
-  GoogleAppMeasurement: 2fd5c5a56c069db635c8e7b92d4809a9591d0a69
-  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
-  MoPub-AdMob-Adapters: 653d455a362a0b31e93f6678b730dd3dcdd3ff81
   mopub-ios-sdk: 10865909734ce73d755dc23003a381497fbbb792
-  mopub_flutter: 8c6fb9195c9e6b491ab6c84bdf4d301244342efc
-  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
+  mopub_flutter: afe9829aadcc88100c63a39bffbc2ffa3cd8120a
 
 PODFILE CHECKSUM: 0ba44ad07df4ab62269dc769727cf0f12b1e453d
 

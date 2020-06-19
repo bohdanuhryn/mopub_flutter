@@ -7,22 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf0631d7-0597-41a4-8f26-c289b28aa5b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/ios/Podfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/example/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/AmazonAdapter/AmazonBanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/AmazonAdapter/AmazonBanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/AmazonAdapter/AmazonBanner.m" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/AmazonAdapter/AmazonBanner.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/MopubBunner.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/Classes/MopubBunner.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/mopub_flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/mopub_flutter/ios/mopub_flutter.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/AmazonAdapter/AmazonBanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/AmazonAdapter/AmazonBanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/AmazonAdapter/AmazonBanner.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/AmazonAdapter/AmazonBanner.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/MopubBunner.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MopubBunner.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/mopub_flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/mopub_flutter.podspec" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
