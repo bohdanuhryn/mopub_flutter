@@ -22,7 +22,7 @@ class _MopubAppState extends State<MopubApp> {
 
     @override
     void initState() {
-        super.initState();
+      super.initState();
     }
 
     @override

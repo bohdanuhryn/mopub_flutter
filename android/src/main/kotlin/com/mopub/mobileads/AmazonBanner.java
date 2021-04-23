@@ -29,7 +29,7 @@ public class AmazonBanner extends CustomEventBanner implements AdListener {
     protected void loadBanner(Context context, CustomEventBannerListener customEventBannerListener, Map<String, Object> localExtras, Map<String, String> serverExtras) {
         bannerListener = customEventBannerListener;
 
-        Activity activity = null;
+        Activity activity;
         if (context instanceof Activity) {
             activity = (Activity) context;
         } else {

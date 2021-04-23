@@ -27,8 +27,10 @@ class MopubBanner(
     init {
         channel.setMethodCallHandler(this)
         val size: Map<*, *> = args?.get("adSize") as Map<*, *>
-        adView.adUnitId = (args["adUnitId"] as String?) ?: ""
-        adView.localExtras = getLocalExtras(activity, size)
+        adView.setAdUnitId((args["adUnitId"] as String?) ?: "")
+        adView.setLocalExtras(getLocalExtras(activity, size))
+//        adView.adUnitId = (args["adUnitId"] as String?) ?: ""
+//        adView.localExtras = getLocalExtras(activity, size)
         adView.layoutParams = getLayoutParams(activity, size)
         adView.bannerAdListener = bannerAdListener()
         adView.loadAd()
@@ -60,12 +62,12 @@ class MopubBanner(
                 channel.invokeMethod("expanded", null)
             }
 
-            override fun onBannerLoaded(banner: MoPubView?) {
-                channel.invokeMethod("loaded", null)
-            }
-
             override fun onBannerCollapsed(banner: MoPubView?) {
                 channel.invokeMethod("collapsed", null)
+            }
+
+            override fun onBannerLoaded(banner: MoPubView) {
+                channel.invokeMethod("loaded", null)
             }
 
             override fun onBannerFailed(banner: MoPubView?, errorCode: MoPubErrorCode?) {

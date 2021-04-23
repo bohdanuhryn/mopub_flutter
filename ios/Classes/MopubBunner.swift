@@ -1,5 +1,5 @@
 import Foundation
-import MoPub
+import MoPubSDK
 
 @objc class MopubBanner : NSObject, FlutterPlatformView, MPAdViewDelegate {
     
