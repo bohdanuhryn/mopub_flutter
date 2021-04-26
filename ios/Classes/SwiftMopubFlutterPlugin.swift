@@ -1,5 +1,5 @@
 import Flutter
-import MoPub
+import MoPubSDK
 
 public class SwiftMopubFlutterPlugin: NSObject, FlutterPlugin {
     

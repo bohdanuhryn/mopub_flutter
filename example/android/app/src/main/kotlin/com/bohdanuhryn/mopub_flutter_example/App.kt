@@ -1,7 +1,7 @@
 package com.bohdanuhryn.mopub_flutter_example
 
 import android.content.Context
-import android.support.multidex.MultiDex
+import androidx.multidex.MultiDex
 import io.flutter.app.FlutterApplication
 
 class App : FlutterApplication() {

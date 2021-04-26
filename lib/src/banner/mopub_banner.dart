@@ -9,13 +9,13 @@ class MopubBanner extends StatefulWidget {
 
     final String adUnitId;
     final MopubBannerSize adSize;
-    final void Function(MopubBannerEvent, Map<String, dynamic>) listener;
-    final void Function(MopubBannerController) onBannerCreated;
+    final void Function(MopubBannerEvent, Map<String, dynamic>?)? listener;
+    final void Function(MopubBannerController?)? onBannerCreated;
 
     MopubBanner({
-        Key key,
-        @required this.adUnitId,
-        @required this.adSize,
+        Key? key,
+        required this.adUnitId,
+        required this.adSize,
         this.listener,
         this.onBannerCreated,
     }) : super(key: key);
@@ -27,14 +27,14 @@ class MopubBanner extends StatefulWidget {
 
 class _MopubBannerState extends State<MopubBanner> {
 
-    MopubBannerController _controller;
+    MopubBannerController? _controller;
 
     @override
     Widget build(BuildContext context) {
         if (defaultTargetPlatform == TargetPlatform.android) {
             return Container(
-                width: widget.adSize.width >= 0 ? widget.adSize.width.toDouble() : double.infinity,
-                height: widget.adSize.height >= 0 ? widget.adSize.height.toDouble() : double.infinity,
+                width: widget.adSize.width! >= 0 ? widget.adSize.width!.toDouble() : double.infinity,
+                height: widget.adSize.height! >= 0 ? widget.adSize.height!.toDouble() : double.infinity,
                 child: AndroidView(
                     key: UniqueKey(),
                     viewType: 'mopub_flutter/banner',
@@ -49,8 +49,8 @@ class _MopubBannerState extends State<MopubBanner> {
         } else if (defaultTargetPlatform == TargetPlatform.iOS) {
             return Container(
                 key: UniqueKey(),
-                width: widget.adSize.width.toDouble(),
-                height: widget.adSize.height.toDouble(),
+                width: widget.adSize.width!.toDouble(),
+                height: widget.adSize.height!.toDouble(),
                 child: UiKitView(
                     viewType: 'mopub_flutter/banner',
                     creationParams: <String, dynamic>{
@@ -74,7 +74,7 @@ class _MopubBannerState extends State<MopubBanner> {
     void _onPlatformViewCreated(int id) {
         _controller = MopubBannerController(id, widget.listener);
         if (widget.onBannerCreated != null) {
-            widget.onBannerCreated(_controller);
+            widget.onBannerCreated!(_controller);
         }
     }
 

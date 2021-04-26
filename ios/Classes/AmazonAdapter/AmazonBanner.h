@@ -1,4 +1,4 @@
-#import <MoPub/MPInlineAdAdapter.h>
+#import <MoPubSDK/MPInlineAdAdapter.h>
 
 @interface AmazonBanner : MPInlineAdAdapter
 
